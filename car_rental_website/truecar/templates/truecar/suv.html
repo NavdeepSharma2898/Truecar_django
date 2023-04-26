@@ -1,0 +1,106 @@
+{% extends 'truecar/basic.html' %}
+{% block title %} SUV {% endblock %}
+
+{% block css %}
+          .col-md-4
+          {
+          display: inline-block;
+          margin-left:-4px;
+          }
+          .col-md-4 img{
+          width: 200PX;
+          height: 100PX;
+          }
+
+{% endblock %}
+
+{% block body %}
+
+
+<main role="main">
+  <br><center><h3>SUV CARS</h3></center>
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row my-3">
+      <div class="col-md-4 my-3">
+          <div class="card ml-4 my-3 text-white bg-dark" style="width: 18rem;">
+            <img src="/media/{{suv.0.image}}" class="card-img-top ml-4 mr-4 my-4" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ suv.0.product_name }}</h5>
+              <p class="card-text">CAPACITY: {{ suv.0.sub_category }} </p>
+              <p class="card-text">MODEL: {{ suv.0.make }} </p>
+              <p class="card-text">DRIVER: {{ suv.0.desc }} </p>
+              <a href="#" class="btn btn-primary">BOOK NOW</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4 my-3">
+          <div class="card ml-4 my-3 text-white bg-dark" style="width: 18rem;">
+            <img src="/media/{{suv.1.image}}" class="card-img-top ml-4 mr-4 my-4" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ suv.1.product_name }}</h5>
+              <p class="card-text">CAPACITY: {{ suv.1.sub_category }} </p>
+              <p class="card-text">MODEL: {{ suv.1.make }} </p>
+              <p class="card-text">DRIVER: {{ suv.1.desc }} </p>
+              <a href="#" class="btn btn-primary">BOOK NOW</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4 my-3 ">
+          <div class="card ml-4 my-3 text-white bg-dark" style="width: 18rem;">
+            <img src="/media/{{suv.2.image}}" class="card-img-top ml-4 mr-4 my-4" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ suv.2.product_name }}</h5>
+              <p class="card-text">CAPACITY: {{ suv.2.sub_category }} </p>
+              <p class="card-text">MODEL: {{ suv.2.make }} </p>
+              <p class="card-text">DRIVER: {{ suv.2.desc }} </p>
+              <a href="#" class="btn btn-primary">BOOK NOW</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4 my-3">
+          <div class="card ml-4 my-3 text-white bg-dark" style="width: 18rem;">
+            <img src="/media/{{suv.3.image}}" class="card-img-top ml-4 mr-4 my-4" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ suv.3.product_name }}</h5>
+              <p class="card-text">CAPACITY: {{ suv.3.sub_category }} </p>
+              <p class="card-text">MODEL: {{ suv.3.make }} </p>
+              <p class="card-text">DRIVER: {{ suv.3.desc }} </p>
+              <a href="#" class="btn btn-primary">BOOK NOW</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4 my-3">
+          <div class="card ml-4 my-3 text-white bg-dark" style="width: 18rem;">
+            <img src="/media/{{suv.4.image}}" class="card-img-top ml-4 mr-4 my-4" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ suv.4.product_name }}</h5>
+              <p class="card-text">CAPACITY: {{ suv.4.sub_category }} </p>
+              <p class="card-text">MODEL: {{ suv.4.make }} </p>
+              <p class="card-text">DRIVER: {{ suv.4.desc }} </p>
+              <a href="#" class="btn btn-primary">BOOK NOW</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4 my-3">
+          <div class="card ml-4 my-3 text-white bg-dark" style="width: 18rem;">
+            <img src="/media/{{suv.5.image}}" class="card-img-top ml-4 mr-4 my-4" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ suv.5.product_name }}</h5>
+              <p class="card-text">CAPACITY: {{ suv.5.sub_category }} </p>
+              <p class="card-text">MODEL: {{ suv.5.make }} </p>
+              <p class="card-text">DRIVER: {{ suv.5.desc }} </p>
+              <a href="#" class="btn btn-primary">BOOK NOW</a>
+            </div>
+          </div>
+      </div>
+
+
+   </div>
+
+
+  </div> <!-- /container -->
+
+</main>
+
+{% endblock %}

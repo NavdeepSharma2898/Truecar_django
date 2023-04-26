@@ -1,0 +1,42 @@
+{% extends 'truecar/basic.html' %}
+
+{% block title %} SEARCH CAR{% endblock %}
+{% block css %}
+          .col-md-4
+          {
+          display: inline-block;
+          margin-left:-4px;
+          }
+          .col-md-4 img{
+          width: 200PX;
+          height: 100PX;
+          }
+
+{% endblock %}
+
+{% block body %}
+<div class="container">
+
+ {% for i in test1 %}
+                                <div class="col-xs-3 col-sm-3 col-md-4 my-4">
+                                  <div class="card text-white bg-dark" style="width: 18rem;">
+                                    <img src='/media/{{i.image}}' class="card-img-top ml-4 mr-4 my-4" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title" id="namepr{{i.id}}">{{i.product_name}}</h5>
+                                        <p class="card-text" id="descpr{{i.id}}"> <b>DRIVER:</b> {{i.desc}}</p>
+                                       <p class="card-text"><b>SEGMENT:</b> {{i.category}}</p>
+                                      <button id="pr{{i.id}}" class="btn btn-primary cart">BOOK NOW</button>
+                                    </div>
+                                  </div>
+                                </div>
+
+                            {% endfor %}
+</div>
+
+{% endblock %}
+
+{% block js%}
+
+
+
+{% endblock %}

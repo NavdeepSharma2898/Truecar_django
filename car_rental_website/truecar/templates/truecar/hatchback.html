@@ -1,0 +1,107 @@
+{% extends 'truecar/basic.html' %}
+{% block title %} Hatchback {% endblock %}
+
+{% block css %}
+          .col-md-4
+          {
+          display: inline-block;
+          margin-left:-4px;
+          }
+          .col-md-4 img{
+          width: 200PX;
+          height: 100PX;
+          }
+
+{% endblock %}
+
+{% block body %}
+
+
+<main role="main">
+  <br><center><h3>HATCHBACK CARS</h3></center>
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row my-3">
+      <div class="col-md-4 my-3">
+          <div class="card ml-4 my-3 text-white bg-dark" style="width: 18rem;">
+            <img src="/media/{{hatchback.0.image}}" class="card-img-top ml-4 mr-4 my-4" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ hatchback.0.product_name }}</h5>
+              <p class="card-text">CAPACITY: {{ hatchback.0.sub_category }} </p>
+              <p class="card-text">MODEL: {{ hatchback.0.make }} </p>
+              <p class="card-text">DRIVER: {{ hatchback.0.desc }} </p>
+              <a href="#" class="btn btn-primary">BOOK NOW</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4 my-3">
+          <div class="card ml-4 my-3 text-white bg-dark" style="width: 18rem;">
+            <img src="/media/{{hatchback.1.image}}" class="card-img-top ml-4 mr-4 my-4" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ hatchback.1.product_name }}</h5>
+              <p class="card-text">CAPACITY: {{ hatchback.1.sub_category }} </p>
+              <p class="card-text">MODEL: {{ hatchback.1.make }} </p>
+              <p class="card-text">DRIVER: {{ hatchback.1.desc }} </p>
+              <a href="#" class="btn btn-primary">BOOK NOW</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4 my-3">
+          <div class="card ml-4 my-3 text-white bg-dark" style="width: 18rem;">
+            <img src="/media/{{hatchback.2.image}}" class="card-img-top ml-4 mr-4 my-4" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ hatchback.2.product_name }}</h5>
+              <p class="card-text">CAPACITY: {{ hatchback.2.sub_category }} </p>
+              <p class="card-text">MODEL: {{ hatchback.2.make }} </p>
+              <p class="card-text">DRIVER: {{ hatchback.2.desc }} </p>
+              <a href="#" class="btn btn-primary">BOOK NOW</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4 my-3">
+          <div class="card ml-4 my-3 text-white bg-dark" style="width: 18rem;">
+            <img src="/media/{{hatchback.3.image}}" class="card-img-top ml-4 mr-4 my-4" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ hatchback.3.product_name }}</h5>
+              <p class="card-text">CAPACITY: {{ hatchback.3.sub_category }} </p>
+              <p class="card-text">MODEL: {{ hatchback.3.make }} </p>
+              <p class="card-text">DRIVER: {{ hatchback.3.desc }} </p>
+              <a href="#" class="btn btn-primary">BOOK NOW</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4 my-3">
+          <div class="card ml-4 my-3 text-white bg-dark" style="width: 18rem;">
+            <img src="/media/{{hatchback.4.image}}" class="card-img-top ml-4 mr-4 my-4" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ hatchback.4.product_name }}</h5>
+              <p class="card-text">CAPACITY: {{ hatchback.4.sub_category }} </p>
+              <p class="card-text">MODEL: {{ hatchback.4.make }} </p>
+              <p class="card-text">DRIVER: {{ hatchback.4.desc }} </p>
+              <a href="#" class="btn btn-primary">BOOK NOW</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4 my-3">
+          <div class="card ml-4 my-3 text-white bg-dark" style="width: 18rem;">
+            <img src="/media/{{hatchback.5.image}}" class="card-img-top ml-4 mr-4 my-4" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ hatchback.5.product_name }}</h5>
+              <p class="card-text">CAPACITY: {{ hatchback.5.sub_category }} </p>
+              <p class="card-text">MODEL: {{ hatchback.5.make }} </p>
+              <p class="card-text">DRIVER: {{ hatchback.5.desc }} </p>
+              <a href="#" class="btn btn-primary">BOOK NOW</a>
+            </div>
+          </div>
+      </div>
+
+
+    </div>
+
+
+
+  </div> <!-- /container -->
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends 'truecar/basic.html' %}
+
+{% block title %} Signup {% endblock %}
+
+{% block css %}  {% endblock %}
+
+{% block body %}
+
+<div class="container" >
+
+  <form class="row g-3 my-1" action="/truecar/registration/" method="post">{% csrf_token %}
+   <div class="col-12 my-3">
+    <label for="inputAddress2" class="form-label">NAME</label>
+    <input type="text" class="form-control" id="inputAddress2" name="name" placeholder="ENTER YOUR FULL NAME" required>
+  </div>
+    <div class="col-12 my-2">
+    <label for="inputAddress2" class="form-label">CONTACT NUMBER</label>
+    <input type="tel" class="form-control" id="phone" name="phone" placeholder="ENTER YOUR PHONE NUMBER" required>
+  </div>
+  <div class="col-md-12 my-3">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="ENTER YOUR EMAIL" required>
+  </div>
+  <div class="col-md-6 my-3">
+    <label for="pass1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="pass1" name="password" placeholder="ENTER YOUR PASSWORD" required>
+  </div>
+  <div class="col-md-6 my-3">
+    <label for="pass2" class="form-label">Confirm Password</label>
+    <input type="password" class="form-control" id="pass2" name="cpassword" placeholder="CONFIRM YOUR PASSWORD" required>
+  </div>
+  <div class="col-12 my-3">
+    <label for="inputAddress" class="form-label">Address</label>
+    <input type="text" class="form-control" id="inputAddress" name="address" placeholder="ENTER YOUR ADDRESS" required>
+  </div>
+  <div class="col-12 my-3">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck" name="checked" required>
+      <label class="form-check-label" for="gridCheck" >
+        I AGREE TO ALL TERMS
+      </label>
+    </div>
+  </div>
+  <div class="col-12" >
+    <button type="submit" class="btn btn-primary my-2">SignUp</button>
+  </div>
+</form>
+
+</div>
+
+{% endblock %}
